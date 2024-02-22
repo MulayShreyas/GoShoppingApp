@@ -8,8 +8,9 @@ public class GSNormalAcc extends NormalAcc {
     }
 
     public void bookProduct(float deliveryCharges) {
-        System.out.println("Charges of bookProduct: " + getCharges());
-        System.out.println("Your total delivery Charges: " + deliveryCharges);
+        System.out.println("Price of Book Product is: " + getCharges());
+        System.out.println("Delivery charges of Book Product is: " + deliveryCharges);
+        System.out.println("Total Amount : "+ (getCharges() + deliveryCharges));
     }
 
     @Override

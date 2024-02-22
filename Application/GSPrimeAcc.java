@@ -8,9 +8,16 @@ public class GSPrimeAcc extends PrimeAcc {
         super(accNo, accNm, charges, isPrime);
     }
 
-    public void charges(float charges) {
-        System.out.println("charges is: " + charges);
-        System.out.println("delivery charges: " + (charges - 500.0f));
+    public void bookProduct(float charges) {
+        if(isPrime()) {
+            System.out.println("Price of Book Product is: " + charges);
+            System.out.println("Delivery charges of Book Product is: " + getdeliveryCharges());
+            System.out.println("Total Amount : "+(charges + getdeliveryCharges()));
+        }else{
+            System.out.println("Price of Book Product is: " + charges);
+            System.out.println("Delivery charges of Book Product is: " + 50.0);
+            System.out.println("Total Amount : "+(charges + 50.0));
+        }
     }
 
     @Override
