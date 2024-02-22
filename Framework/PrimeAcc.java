@@ -2,7 +2,7 @@ package Framework;
 
 public abstract class PrimeAcc extends ShopAcc {
     private boolean isPrime;
-    private static final float deliveryCharges = 500.0f;
+    private static final float deliveryCharges = 0;
 
     public PrimeAcc(int accNo, String accNm, float charges, boolean isPrime) {
         super(accNo, accNm, charges);
@@ -22,7 +22,7 @@ public abstract class PrimeAcc extends ShopAcc {
     }
 
     public void bookProduct(float charges) {
-        System.out.println("Charges " + (charges - 500.0f));
+
     }
 
     @Override
