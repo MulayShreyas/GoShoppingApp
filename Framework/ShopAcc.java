@@ -37,11 +37,11 @@ public class ShopAcc {
     }
 
     public void bookProduct(float charges) {
-        System.out.println("Book Product charges " + (charges - 500.0f));
+        System.out.println("Book Product charges is " + charges);
     }
 
     public void items(float charges) {
-        System.out.println("Your bill is: " + (charges));
+        System.out.println("Other Items charges is: " + charges);
     }
 
     @Override
